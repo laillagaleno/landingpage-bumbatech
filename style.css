@@ -6,7 +6,7 @@
     --cor-terciaria: #F07777;
     --cor-hover: #272727;
     --cor-background: #F4E7E7;
-    --cor-quemSomos: #DBE5F3;
+    --cor-background2: #DBE5F3;
     --cor-rodape: #626974;
 
     --font-titulos: "Georama", sans-serif;
@@ -169,8 +169,6 @@ body{
     object-fit: cover;
 }
 
-/* CSS DO CONTEXTO DO JOGO */
-
 h3 {
     color: var(--cor-primaria);
     text-align: center;
@@ -188,19 +186,17 @@ h3 {
     background-color: #333;
 }
 
-body {
-    background-color: #F8F8F8;
-}
-
 .container {
     width: 100%;
 }
+
+/* CSS DO CONTEXTO DO JOGO */
 
 h3 {
     font-family: var(--font-titulos);
     font-size: 2.5rem;
     font-weight: bold;
-    color: #000000;
+    color: var(--cor-primaria);
     text-align: left;
     margin: 0 0 px;
     padding: 50px 80px;
@@ -208,8 +204,8 @@ h3 {
 
 .intro {
     margin-bottom: 20px;
-    background-color: #F3E5E5;
-    padding: 20px;
+    background-color: var(--cor-background);
+    padding: 70px;
     margin: 0 0 0px;
 }
 
@@ -233,8 +229,8 @@ h3 {
 }
 
 .intro-image, .description-image {
-    width: 30%;
-    padding: 10px 80px;
+    width: 70%;
+    padding: 10px 50px;
     border-radius: 10px;
 }
 
@@ -249,7 +245,7 @@ h3 {
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
-    background-color: rgba(152, 180, 241, 0.521);
+    background-color: var(--cor-background2);
 }
 
 .character {
@@ -270,7 +266,7 @@ h3 {
 .empresa_apresentacao {
     width: 100%;
     height: 589px;
-    background: var(--cor-quemSomos);
+    background: var(--cor-background2);
     display: flex;
     align-items: center;
     justify-content: center;
