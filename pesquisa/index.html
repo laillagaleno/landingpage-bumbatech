@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/bumba.ico" type="image/x-icon" />
+    <title>Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global.css">
+
+</head>
+
+<body>
+    <header class="pesquisa_cabecalho">
+        <h2>Formulário de Pesquisa</h2>
+        <p>Este formulário tem como objetivo coletar informações sobre o perfil dos jogadores para aprimorar a experiência do jogo Ritmos da
+            Ilha.</p>
+    </header>
+
+    <main class="pesquisa_form">
+        <form id="pesquisa_form">
+            <fieldset class="grupo">
+                <legend>Informações Gerais</legend>
+                <div class="questao">
+                    <label><strong>Qual a sua idade?</strong></label>
+                    <label class="opcao" data-for="idade_1" tabindex="0">
+                        <input type="radio" name="idade" id="idade_1"> Menor de 15 anos
+                    </label>
+                    <label class="opcao" data-for="idade_2" tabindex="0">
+                        <input type="radio" name="idade" id="idade_2"> 16 - 25 anos
+                    </label>
+                    <label class="opcao" data-for="idade_3" tabindex="0">
+                        <input type="radio" name="idade" id="idade_3"> 26 - 30 anos
+                    </label>
+                    <label class="opcao" data-for="idade_4" tabindex="0">
+                        <input type="radio" name="idade" id="idade_4"> 31 - 40 anos
+                    </label>
+                    <label class="opcao" data-for="idade_5" tabindex="0">
+                        <input type="radio" name="idade" id="idade_5"> 41 - 50 anos
+                    </label>
+                    <label class="opcao" data-for="idade_6" tabindex="0">
+                        <input type="radio" name="idade" id="idade_6"> Maior que 50 anos
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Qual o seu gênero?</strong></label>
+                    <label class="opcao" data-for="genero_feminino" tabindex="0">
+                        <input type="radio" name="genero" id="genero_feminino"> Feminino
+                    </label>
+                    <label class="opcao" data-for="genero_masculino" tabindex="0">
+                        <input type="radio" name="genero" id="genero_masculino"> Masculino
+                    </label>
+                    <label class="opcao" data-for="genero_outro" tabindex="0">
+                        <input type="radio" name="genero" id="genero_outro"> Outro
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Qual seu grau de escolaridade?</strong></label>
+                    <label class="opcao" data-for="educacao_1" tabindex="0">
+                        <input type="radio" name="educacao" id="educacao_1">Ensino Fundamental Completo
+                    </label>
+                    <label class="opcao" data-for="educacao_2" tabindex="0">
+                        <input type="radio" name="educacao" id="educacao_2">Ensino Médio Completo
+                    </label>
+                    <label class="opcao" data-for="educacao_3" tabindex="0">
+                        <input type="radio" name="educacao" id="educacao_3">Ensino Superio Incompleto
+                    </label>
+                    <label class="opcao" data-for="educacao_4" tabindex="0">
+                        <input type="radio" name="educacao" id="educacao_4">Ensino Superio Completo
+                    </label>
+                    <label class="opcao" data-for="educacao_5" tabindex="0">
+                        <input type="radio" name="educacao" id="educacao_5">Pós-Graduação
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Você reside no Maranhão?</strong></label>
+                    <label class="opcao" data-for="estado_sim" tabindex="0">
+                        <input type="radio" name="is_estado" id="estado_sim">Sim
+                    </label>
+                    <label class="opcao" data-for="estado_nao" tabindex="0">
+                        <input type="radio" name="is_estado" id="estado_nao">Não
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Se sim, qual município do Maranhão você reside?</strong></label>
+                    <input type="text" name="cidade" placeholder="Ex: São Luís"  id="cidade">
+                </div>
+
+                <div class="questao">
+                    <label><strong>É participante do Programa Trilhas Inova (2024)?</strong></label>
+                    <label class="opcao" data-for="trilha_sim" tabindex="0">
+                        <input type="radio" name="is_trilha" id="trilha_sim">Sim
+                    </label>
+
+                    <label class="opcao" data-for="trilha_false" tabindex="0">
+                        <input type="radio" name="is_trilha" id="trilha_nao">Não
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Se sim, você faz parte de qual trilha?</strong></label>
+                    <label class="opcao" data-for="trilha_back" tabindex="0">
+                        <input type="radio" name="trilha" id="trilha_back">Trilha Back-end
+                    </label>
+
+                    <label class="opcao" data-for="trilha_front" tabindex="0">
+                        <input type="radio" name="trilha" id="trilha_front">Trilha Front-end
+                    </label>
+
+                    <label class="opcao" data-for="trilha_jogos" tabindex="0">
+                        <input type="radio" name="trilha" id="trilha_jogos">Trilha Programação de Jogos
+                    </label>
+
+                    <label class="opcao" data-for="trilha_dados" tabindex="0">
+                        <input type="radio" name="trilha" id="trilha_dados">Trilha Ciências de Dados
+                    </label>
+
+                    <label class="opcao" data-for="trilha_design" tabindex="0">
+                        <input type="radio" name="trilha" id="trilha_design">Trilha Design de Experiência
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <legend>Cultura Maranhense</legend>
+                <div class="questao">
+                    <label><strong>Qual seu nível de conhecimento sobre a Cultura Maranhense?</strong> </label>
+                    <label class="opcao" data-for="conhecimento_otimo" tabindex="0">
+                        <input type="radio" name="conhecimento" id="conhecimento_otimo">Tenho um bom conhecimento
+                    </label>
+                    <label class="opcao" data-for="conhecimento_basico" tabindex="0">
+                        <input type="radio" name="conhecimento" id="conhecimento_basico">Tenho um conhecimento básico
+                    </label>
+                    <label class="opcao" data-for="conhecimento_pouco" tabindex="0">
+                        <input type="radio" name="conhecimento" id="conhecimento_pouco">Conheço pouco
+                    </label>
+                    <label class="opcao" data-for="conhecimento_nada" tabindex="0">
+                        <input type="radio" name="conhecimento" id="conhecimento_nada">Não conheço
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label>
+                        <strong>Qual o seu nível de interesse em relação à cultura do Maranhão?</strong>
+                        <p>
+                            <i>Sendo 1 o nível mais baixo de interesse e 5 o nível mais alto de interesse</i>
+                        </p>
+                    </label>
+
+                    <div class="escala" data-for="1">
+                        <div class="nivel">
+                            <label data-for="1">1</label>
+                            <input type="radio" name="escala" id="1">
+                        </div>
+                        <div class="nivel">
+                            <label data-for="2">2</label>
+                            <input type="radio" name="escala" id="2">
+                        </div>
+                        <div class="nivel">
+                            <label data-for="3">3</label>
+                            <input type="radio" name="escala" id="3">
+                        </div>
+                        <div class="nivel">
+                            <label data-for="4">4</label>
+                            <input type="radio" name="escala" id="4">
+                        </div>
+                        <div class="nivel">
+                            <label data-for="5">5</label>
+                            <input type="radio" name="escala" id="5">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Você se sente representado pela cultura maranhense?</strong></label>
+                    <label class="opcao" data-for="is_representacao_sim" tabindex="0">
+                        <input type="radio" name="is_representacao" id="is_representacao_sim">Sim
+                    </label>
+
+                    <label class="opcao" data-for="is_representacao_nao" tabindex="0">
+                        <input type="radio" name="is_representacao" id="is_representacao_nao">Não
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Você já visitou algum lugar cultural ou histórico do Maranhão?</strong></label>
+                    <label class="opcao" data-for="is_visita_sim" tabindex="0">
+                        <input type="radio" name="is_visita" id="is_visita_sim">Sim
+                    </label>
+
+                    <label class="opcao" data-for="is_visita_nao" tabindex="0">
+                        <input type="radio" name="is_visita" id="is_visita_nao">Não
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Você já experimentou algum prato típico da culinária maranhense?</strong></label>
+                    <label class="opcao" data-for="is_culinaria_sim" tabindex="0">
+                        <input type="radio" name="is_culinaria" id="is_culinaria_sim">Sim
+                    </label>
+
+                    <label class="opcao" data-for="is_culinaria_nao" tabindex="0">
+                        <input type="radio" name="is_culinaria" id="is_culinaria_nao">Não
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Você participa/participou de atividades ou grupos culturais do
+                            Maranhão?</strong></label>
+                    <label class="opcao" data-for="is_atividade_participo" tabindex="0">
+                        <input type="radio" name="is_atividade" id="is_atividade_participo">Participo atualmente
+                    </label>
+
+                    <label class="opcao" data-for="is_atividade_participei" tabindex="0">
+                        <input type="radio" name="is_atividade" id="is_atividade_participei">Já participei
+                    </label>
+
+                    <label class="opcao" data-for="is_atividade_nao" tabindex="0">
+                        <input type="radio" name="is_atividade" id="is_atividade_nao">Não participo
+                    </label>
+                </div>
+
+                <div class="questao">
+                    <label><strong>Selecione os elemento da cultura Maranhense que você tem interesse ou gostaria de
+                            conhecer</strong></label>
+                    <label class="opcao" data-for="cultura_1" tabindex="0">
+                        <input type="checkbox" name="cultura" id="cultura_1">Bumba meu boi
+                    </label>
+                    <label class="opcao" data-for="cultura_2" tabindex="0">
+                        <input type="checkbox" name="cultura" id="cultura_2">Cacuriá
+                    </label>
+                    <label class="opcao" data-for="cultura_3" tabindex="0">
+                        <input type="checkbox" name="cultura" id="cultura_3">Tambor de Crioula
+                    </label>
+                    <label class="opcao" data-for="cultura_4" tabindex="0">
+                        <input type="checkbox" name="cultura" id="cultura_4">Reggae
+                    </label>
+                    <label class="opcao" data-for="cultura_5" tabindex="0">
+                        <input type="checkbox" name="cultura" id="cultura_5">Artesanato
+                    </label>
+                    <label class="opcao" data-for="cultura_6" tabindex="0">
+                        <input type="checkbox" name="cultura" id="cultura_6">Culinária
+                    </label>
+                    <label class="opcao" data-for="cultura_7" tabindex="0">
+                        <input type="checkbox" name="cultura" id="cultura_7">Literatura
+                    </label>
+                    <label class="opcao" data-for="cultura_8" tabindex="0">
+                        <input type="checkbox" name="cultura" id="cultura_8">História
+                    </label>
+                    <label class="opcao" data-for="cultura_9" tabindex="0">
+                        <input type="checkbox" name="cultura" id="cultura_9">Outro
+                        <input type="text" name="cultura" id="cultura_1">
+                    </label>
+                </div>
+            </fieldset>
+
+            <button class="botao_primario" type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="pesquisa.js"></script>
+</body>
+
+</html>
