@@ -99,6 +99,7 @@ body{
 .titulo-principal{
     font-size: 3rem;
     font-family: var(--font-titulos);
+    padding-left: 25%;
 }
 
 .titulo-destaque{
