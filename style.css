@@ -164,6 +164,91 @@ body{
     object-fit: cover;
 }
 
+
+
+body {
+    background-color: #F8F8F8;
+}
+
+.container {
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--font-titulos);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    margin: 0 0 px;
+    padding: 50px 80px;
+}
+
+.intro {
+    margin-bottom: 20px;
+    background-color: #F3E5E5;
+    padding: 20px;
+    margin: 0 0 0px;
+}
+
+.intro-content, .description-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.intro-text, .description-text {
+    width: 60%;
+    padding: 20px 80px;
+}
+
+.intro-text p, .description-text p {
+    font-family: var(--font-paragrafos);
+    font-size: 2rem;
+    color: #000000;
+    line-height: 1.5em;
+}
+
+.intro-image, .description-image {
+    width: 30%;
+    padding: 10px 80px;
+    border-radius: 10px;
+}
+
+
+.intro-image img, .description-image img {
+    width: 100%;
+    border-radius: 47px;
+    box-shadow: -10px 10px 10px rgba(51, 51, 51, 0.4); 
+}
+
+
+.characters {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: rgba(152, 180, 241, 0.521);
+}
+
+.character {
+    width: 30%;
+    text-align: center;
+}
+
+.character img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #00000088;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-style: dashed;
+}
+
+
+
+
+
+
 @media (max-width: 1200px) {
     .cabecalho{
         padding: 1% 5%;
