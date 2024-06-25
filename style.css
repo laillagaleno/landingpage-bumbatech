@@ -27,7 +27,7 @@ body{
 .cabecalho{
     padding: 0% 5%;
     height: 13vh;
-    background-color: #FF577F;
+    background-color: var(--cor-terciaria);
     justify-content: space-between;
     align-items: center;
     display: flex;
