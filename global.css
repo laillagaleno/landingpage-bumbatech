@@ -10,22 +10,22 @@
     --gray-100: #F5F5F5;
     --gray-200: #E0E0E0;
     --gray-500: #616161;
-    --gray-800: #424242;
     --gray-900: #212121;
 
     --blue-100: #EEF5FF;
     --blue-300: #DBE5F3;
 
     --red-100: #FFEBEE;
+    --red-300: #F07777;
     --red-500: #E35151;
     --red-900: #8F1B1B;
 
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #FF577F;
     --cor-hover: #272727;
-    --cor-background: #F4E7E7;
-    --cor-quemSomos: #DBE5F3;
+
+    --cor-background-red: #F4E7E7;
+    --cor-background-blue: #DBE5F3;
     --cor-rodape: #626974;
 
     --font-titulos: "Georama", sans-serif;
@@ -35,6 +35,7 @@
 body{
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
     
     background-color: var(--cor-background);
     color: var(--cor-primaria);
@@ -45,7 +46,7 @@ body{
     padding: 10px;
     border: none;
     border-radius: 8px;
-    background-color: var(--cor-terciaria);
+    background-color: var(--red-300);
     color: #fff;
     font-family: var(--font-paragrafos);
     cursor: pointer;

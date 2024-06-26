@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cor-background);
+  background-color: var(--cor-background-red);
 
   height: 100vh;
   color: var(--gray-900);
