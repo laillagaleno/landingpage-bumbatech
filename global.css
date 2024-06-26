@@ -37,8 +37,12 @@ body{
     height: 100%;
     box-sizing: border-box;
     
-    background-color: var(--cor-background);
+    background-color: var(--cor-background-red);
     color: var(--cor-primaria);
+}
+
+a{
+  text-decoration: none;
 }
 
 .botao_primario {
