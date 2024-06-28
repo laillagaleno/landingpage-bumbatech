@@ -65,30 +65,17 @@ const formularioCadastro = document.getElementById("cadastro_form");
 formularioCadastro.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  // const isVerificacao = validarCampo();
-  // if (isVerificacao === false) return;
+  const isVerificacao = validarCampo();
+  if (isVerificacao === false) return;
 
   const formData = new FormData(formularioCadastro);
   // Recuperar dados do formulario
   const nome = formData.get("nome");
   const email = formData.get("email");
   const senha = formData.get("senha");
-  const confirmarSenha = formData.get("csenha");
+  // const confirmarSenha = formData.get("csenha");
 
-  console.log(nome, email, senha, confirmarSenha);
-
-  const userData = {
-    email: "lailla@example.com",
-    senha: "senha123",
-    nome: "teste",
-    idade: 25,
-    genero: 1, // Exemplo: 0 a 3
-    estado: "SP", // Deve ser <= 2 caracteres
-    cidade: "São Paulo",
-    trilha: 2, // Exemplo: 0 a 5
-    conhece_a_cultura: 1, // Exemplo: 0 a 2
-    mais_se_interessa: 4, // Exemplo: 0 a 7
-  };
+  console.log(nome, email, senha);
 
   formData.append("email", email);
   formData.append("senha", senha);
@@ -101,34 +88,40 @@ formularioCadastro.addEventListener("submit", function (event) {
   formData.append("conhece_a_cultura", 1);
   formData.append("mais_se_interessa", 4);
 
-console.log(JSON.stringify(userData))
-  cadastrarUsuario(formData);
+  alert(`${nome}, seu cadastro foi realizado com sucesso!`);
+  window.location.href = "../pesquisa/";
+
+  // async function cadastrarUsuario() {
+  //   const url =
+  //     "https://bumbatech-api-production.up.railway.app/users/create-user";
+
+  //   try {
+  //     const response = await fetch(url, {
+  //       method: "POST",
+  //       // cache: "no-cache",
+  //       headers: {
+  //         "Accept": "application/json",
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(userData)
+  //     });
+
+  //     const data = await response.json();
+
+  //     console.log(response)
+  //     if (response.status === 200) {
+  //       console.log("Usuário criado com sucesso:", data);
+  //       alert("Cadastro realizado com sucesso!");
+  //       window.location.href = "../pesquisa/";
+  //     } else {
+  //       console.error("Erro ao criar usuário:", data.error);
+  //       alert("Erro no cadastro: " + data.error);
+  //     }
+  //   } catch (error) {
+  //     console.error("Erro ao criar usuário:", error);
+  //     alert("Erro no cadastro: " + error);
+  //   }
+  // }
+
+  cadastrarUsuario();
 });
-
-async function cadastrarUsuario(userData) {
-  const url =
-    "https://bumbatech-api-production.up.railway.app/users/create-user";
-
-  try {
-    const response = await fetch(url, {
-      method: "POST",
-      mode: 'no-cors',
-      cache: "no-cache",
-      headers: {
-        "Content-Type": "multipart/form-data'",
-      },
-      body: userData,
-    });
-
-    if (!response.ok) {
-      throw new Error(`Erro na solicitação: ${response.statusText}`);
-    }
-
-    const data = await response.json();
-    console.log("Usuário criado com sucesso:", data);
-    alert("Cadastro realizado com sucesso!");
-    window.location.href = "../pesquisa/";
-  } catch (error) {
-    console.error("Erro ao criar usuário:", error);
-  }
-}
